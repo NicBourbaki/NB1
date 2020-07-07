@@ -1,0 +1,210 @@
+
+
+StartTime:: 1593600698670
+Tab:: aerospaci
+>> [aerospaci.id]
+Tab:: astral_chain
+>> [astral_chain.id]
+>> [astral_chain.raf_id, astral_chain.source_id]
+Tab:: astral_chain_link_domain
+>> [astral_chain_link_domain.domain_id]
+Tab:: astral_chain_subset_id
+>> [astral_chain_subset_id.astral_chain_id, astral_chain_subset_id.pct_identical, astral_chain_subset_id.release_id]
+Tab:: astral_chain_subset_id_test
+>> [astral_chain_subset_id_test.release_id]
+>> [astral_chain_subset_id_test.pct_identical]
+>> [astral_chain_subset_id_test.astral_chain_id]
+Tab:: astral_domain
+>> [astral_domain.id]
+>> [astral_domain.node_id, astral_domain.sid, astral_domain.source_id]
+>> [astral_domain.header, astral_domain.node_id, astral_domain.source_id, astral_domain.style_id]
+>> [astral_domain.node_id, astral_domain.seq_id, astral_domain.source_id, astral_domain.style_id]
+Tab:: astral_domain_subset_blast_e
+>> [astral_domain_subset_blast_e.astral_domain_id, astral_domain_subset_blast_e.blast_log10_e, astral_domain_subset_blast_e.style_id]
+Tab:: astral_domain_subset_blast_e_test
+>> [astral_domain_subset_blast_e_test.release_id]
+>> [astral_domain_subset_blast_e_test.blast_log10_e]
+>> [astral_domain_subset_blast_e_test.style_id]
+>> [astral_domain_subset_blast_e_test.astral_domain_id]
+Tab:: astral_domain_subset_id
+>> [astral_domain_subset_id.astral_domain_id, astral_domain_subset_id.pct_identical, astral_domain_subset_id.style_id]
+Tab:: astral_domain_subset_id_test
+>> [astral_domain_subset_id_test.release_id]
+>> [astral_domain_subset_id_test.pct_identical]
+>> [astral_domain_subset_id_test.style_id]
+>> [astral_domain_subset_id_test.astral_domain_id]
+Tab:: astral_seq
+>> [astral_seq.id]
+Tab:: astral_seq_blast_cache_1_chain
+>> [astral_seq_blast_cache_1_chain.id1]
+>> [astral_seq_blast_cache_1_chain.id2]
+>> [astral_seq_blast_cache_1_chain.blast_log10_e]
+>> [astral_seq_blast_cache_1_chain.pct_identical]
+Tab:: astral_seq_blast_gap
+>> [astral_seq_blast_gap.id]
+>> [astral_seq_blast_gap.gap_start, astral_seq_blast_gap.hit_id]
+Tab:: astral_seq_coils
+>> [astral_seq_coils.id]
+>> [astral_seq_coils.seq_id, astral_seq_coils.start]
+Tab:: astral_seq_hmm_pfam
+>> [astral_seq_hmm_pfam.id]
+Tab:: astral_seq_hmm_pfam_gap
+>> [astral_seq_hmm_pfam_gap.id]
+>> [astral_seq_hmm_pfam_gap.gap_start, astral_seq_hmm_pfam_gap.hit_id]
+Tab:: astral_seq_source
+>> [astral_seq_source.id]
+>> [astral_seq_source.description]
+Tab:: astral_seq_style
+>> [astral_seq_style.id]
+>> [astral_seq_style.description]
+Tab:: cdd
+>> [cdd.id]
+>> [cdd.pssm_id]
+>> [cdd.accession]
+Tab:: cdd_release
+>> [cdd_release.id]
+>> [cdd_release.release_date]
+Tab:: cdd_structure
+>> [cdd_structure.cdd_id, cdd_structure.structure_id]
+Tab:: cdd_superfamily
+>> [cdd_superfamily.cdd_id]
+Tab:: hmmer_release
+>> [hmmer_release.id]
+>> [hmmer_release.version]
+Tab:: link_pdb
+>> [link_pdb.node_id, link_pdb.pdb_chain_id]
+Tab:: link_pfam
+>> [link_pfam.node_id, link_pfam.pfam_accession]
+Tab:: link_pubmed
+>> [link_pubmed.node_id, link_pubmed.pubmed_id]
+Tab:: link_species
+>> [link_species.node_id]
+Tab:: link_uniprot
+>> [link_uniprot.node_id, link_uniprot.uniprot_accession]
+Tab:: pdb_author
+>> [pdb_author.id]
+Tab:: pdb_chain
+>> [pdb_chain.id]
+>> [pdb_chain.chain, pdb_chain.pdb_release_id]
+Tab:: pdb_chain_compound
+Tab:: pdb_chain_dbref
+>> [pdb_chain_dbref.id]
+Tab:: pdb_chain_diff
+>> [pdb_chain_diff.id]
+Tab:: pdb_chain_diff_category
+>> [pdb_chain_diff_category.id]
+>> [pdb_chain_diff_category.description]
+Tab:: pdb_chain_gene
+Tab:: pdb_chain_source
+Tab:: pdb_chain_tag
+>> [pdb_chain_tag.id]
+Tab:: pdb_chain_uniprot
+>> [pdb_chain_uniprot.pdb_chain_id, pdb_chain_uniprot.uniprot_accession]
+Tab:: pdb_compound
+>> [pdb_compound.id]
+Tab:: pdb_entry
+>> [pdb_entry.id]
+>> [pdb_entry.code]
+Tab:: pdb_gene
+>> [pdb_gene.id]
+Tab:: pdb_headers
+>> [pdb_headers.id]
+>> [pdb_headers.pdb_release_id]
+Tab:: pdb_heterogen
+>> [pdb_heterogen.id]
+Tab:: pdb_local
+>> [pdb_local.pdb_release_id]
+>> [pdb_local.pdb_path]
+Tab:: pdb_method
+>> [pdb_method.id]
+>> [pdb_method.description]
+Tab:: pdb_model
+>> [pdb_model.pdb_entry_id]
+Tab:: pdb_release
+>> [pdb_release.id]
+>> [pdb_release.pdb_entry_id, pdb_release.replaced_by, pdb_release.revision_date, pdb_release.spaci]
+>> [pdb_release.pdb_entry_id, pdb_release.replaced_by, pdb_release.revision_date, pdb_release.whatcheck4]
+>> [pdb_release.pdb_entry_id, pdb_release.replaced_by, pdb_release.revision_date, pdb_release.whatcheck3]
+>> [pdb_release.pdb_entry_id, pdb_release.replaced_by, pdb_release.revision_date, pdb_release.whatcheck2]
+>> [pdb_release.pdb_entry_id, pdb_release.replaced_by, pdb_release.revision_date, pdb_release.whatcheck1]
+>> [pdb_release.pdb_entry_id, pdb_release.r_factor, pdb_release.replaced_by, pdb_release.revision_date]
+>> [pdb_release.pdb_entry_id, pdb_release.replaced_by, pdb_release.resolution, pdb_release.revision_date]
+>> [pdb_release.method_id, pdb_release.pdb_entry_id, pdb_release.replaced_by, pdb_release.revision_date]
+>> [pdb_release.pdb_entry_id, pdb_release.procheck1, pdb_release.replaced_by, pdb_release.revision_date]
+>> [pdb_release.pdb_entry_id, pdb_release.procheck2, pdb_release.replaced_by, pdb_release.revision_date]
+>> [pdb_release.pdb_entry_id, pdb_release.procheck3, pdb_release.replaced_by, pdb_release.revision_date]
+>> [pdb_release.has_valid_procheck, pdb_release.pdb_entry_id, pdb_release.replaced_by, pdb_release.revision_date]
+>> [pdb_release.has_valid_whatcheck, pdb_release.pdb_entry_id, pdb_release.replaced_by, pdb_release.revision_date]
+>> [pdb_release.file_date, pdb_release.pdb_entry_id, pdb_release.revision_date]
+Tab:: pdb_release_author
+>> [pdb_release_author.id]
+Tab:: pdb_release_heterogen
+>> [pdb_release_heterogen.pdb_heterogen_id, pdb_release_heterogen.pdb_release_id]
+Tab:: pdb_source
+>> [pdb_source.id]
+Tab:: pdb_source_species
+>> [pdb_source_species.pdb_source_id]
+Tab:: pfam
+>> [pfam.id]
+>> [pfam.accession, pfam.release_id]
+>> [pfam.name, pfam.release_id]
+Tab:: pfam_equiv
+>> [pfam_equiv.old_pfam_id]
+>> [pfam_equiv.new_pfam_id]
+Tab:: pfam_local
+>> [pfam_local.release_id]
+>> [pfam_local.pfama_global_hmm_file]
+Tab:: pfam_release
+>> [pfam_release.id]
+>> [pfam_release.version]
+Tab:: pfam_type
+>> [pfam_type.id]
+>> [pfam_type.description]
+Tab:: raf
+>> [raf.id]
+Tab:: raf_version
+>> [raf_version.id]
+>> [raf_version.version]
+Tab:: scop_comment
+>> [scop_comment.id]
+Tab:: scop_curation_type
+>> [scop_curation_type.id]
+>> [scop_curation_type.description]
+Tab:: scop_history
+>> [scop_history.id]
+Tab:: scop_history_type
+>> [scop_history_type.id]
+>> [scop_history_type.description]
+Tab:: scop_index
+>> [scop_index.node_id]
+Tab:: scop_level
+>> [scop_level.id]
+>> [scop_level.description]
+>> [scop_level.plural]
+>> [scop_level.abbreviation]
+>> [scop_level.master_abbreviation]
+Tab:: scop_node
+>> [scop_node.id]
+>> [scop_node.release_id, scop_node.sunid]
+Tab:: scop_node_pdbstyle
+>> [scop_node_pdbstyle.node_id]
+>> [scop_node_pdbstyle.file_path]
+Tab:: scop_node_thumbnail
+Tab:: scop_release
+>> [scop_release.id]
+>> [scop_release.version]
+>> [scop_release.freeze_date]
+>> [scop_release.release_date]
+Tab:: scop_subset_level
+>> [scop_subset_level.level_node_id]
+Tab:: species
+>> [species.id]
+>> [species.common_name, species.details, species.ncbi_taxid, species.scientific_name]
+Tab:: thumbnail
+>> [thumbnail.id]
+>> [thumbnail.image_path]
+Tab:: uniprot
+>> [uniprot.id]
+>> [uniprot.long_id]
+StopTime:: 1593600832180
+TimeTaken:: 133s

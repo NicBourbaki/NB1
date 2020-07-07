@@ -1,0 +1,370 @@
+
+
+StartTime:: 1593601130432
+Tab:: Address
+>> [Address.AddressID]
+>> [Address.rowguid]
+>> [Address.AddressLine1, Address.ModifiedDate, Address.SpatialLocation]
+>> [Address.AddressLine1, Address.PostalCode, Address.SpatialLocation]
+>> [Address.AddressLine1, Address.City, Address.SpatialLocation]
+>> [Address.AddressLine1, Address.AddressLine2, Address.ModifiedDate, Address.PostalCode]
+>> [Address.AddressLine1, Address.AddressLine2, Address.PostalCode, Address.StateProvinceID]
+Tab:: AddressType
+>> [AddressType.AddressTypeID]
+>> [AddressType.Name]
+>> [AddressType.rowguid]
+Tab:: AWBuildVersion
+>> [AWBuildVersion.SystemInformationID]
+>> [AWBuildVersion.Database Version]
+>> [AWBuildVersion.VersionDate]
+>> [AWBuildVersion.ModifiedDate]
+Tab:: BillOfMaterials
+>> [BillOfMaterials.BillOfMaterialsID]
+>> [BillOfMaterials.ComponentID, BillOfMaterials.ModifiedDate, BillOfMaterials.ProductAssemblyID]
+>> [BillOfMaterials.ComponentID, BillOfMaterials.ProductAssemblyID, BillOfMaterials.StartDate]
+>> [BillOfMaterials.ComponentID, BillOfMaterials.EndDate, BillOfMaterials.ProductAssemblyID]
+Tab:: BusinessEntity
+>> [BusinessEntity.BusinessEntityID]
+>> [BusinessEntity.rowguid]
+>> [BusinessEntity.ModifiedDate]
+Tab:: BusinessEntityAddress
+>> [BusinessEntityAddress.AddressID]
+>> [BusinessEntityAddress.rowguid]
+>> [BusinessEntityAddress.AddressTypeID, BusinessEntityAddress.BusinessEntityID]
+Tab:: BusinessEntityContact
+>> [BusinessEntityContact.PersonID]
+>> [BusinessEntityContact.rowguid]
+>> [BusinessEntityContact.BusinessEntityID, BusinessEntityContact.ContactTypeID]
+Tab:: ContactType
+>> [ContactType.ContactTypeID]
+>> [ContactType.Name]
+Tab:: CountryRegion
+>> [CountryRegion.CountryRegionCode]
+>> [CountryRegion.Name]
+Tab:: CountryRegionCurrency
+>> [CountryRegionCurrency.CountryRegionCode, CountryRegionCurrency.CurrencyCode]
+Tab:: CreditCard
+>> [CreditCard.CreditCardID]
+>> [CreditCard.CardNumber]
+Tab:: Culture
+>> [Culture.CultureID]
+>> [Culture.Name]
+Tab:: Currency
+>> [Currency.CurrencyCode]
+>> [Currency.Name]
+Tab:: CurrencyRate
+>> [CurrencyRate.CurrencyRateID]
+>> [CurrencyRate.CurrencyRateDate, CurrencyRate.EndOfDayRate, CurrencyRate.ModifiedDate]
+>> [CurrencyRate.AverageRate, CurrencyRate.CurrencyRateDate, CurrencyRate.ModifiedDate]
+>> [CurrencyRate.CurrencyRateDate, CurrencyRate.ToCurrencyCode]
+Tab:: Customer
+>> [Customer.CustomerID]
+>> [Customer.AccountNumber]
+>> [Customer.rowguid]
+>> [Customer.PersonID, Customer.StoreID]
+Tab:: Department
+>> [Department.DepartmentID]
+>> [Department.Name]
+Tab:: Document
+>> [Document.DocumentNode]
+>> [Document.Title]
+>> [Document.FileName]
+>> [Document.rowguid]
+>> [Document.Document, Document.ModifiedDate]
+>> [Document.ChangeNumber, Document.ModifiedDate]
+>> [Document.ModifiedDate, Document.Revision]
+>> [Document.DocumentSummary, Document.ModifiedDate, Document.Owner]
+>> [Document.DocumentSummary, Document.ModifiedDate, Document.Status]
+Tab:: EmailAddress
+>> [EmailAddress.BusinessEntityID]
+>> [EmailAddress.EmailAddressID]
+>> [EmailAddress.EmailAddress]
+>> [EmailAddress.rowguid]
+Tab:: Employee
+>> [Employee.BusinessEntityID]
+>> [Employee.NationalIDNumber]
+>> [Employee.LoginID]
+>> [Employee.OrganizationNode]
+>> [Employee.rowguid]
+>> [Employee.BirthDate, Employee.HireDate, Employee.MaritalStatus]
+>> [Employee.BirthDate, Employee.Gender, Employee.HireDate]
+>> [Employee.BirthDate, Employee.VacationHours]
+>> [Employee.BirthDate, Employee.SickLeaveHours]
+>> [Employee.Gender, Employee.HireDate, Employee.VacationHours]
+>> [Employee.JobTitle, Employee.VacationHours]
+Tab:: EmployeeDepartmentHistory
+>> [EmployeeDepartmentHistory.BusinessEntityID, EmployeeDepartmentHistory.ModifiedDate]
+>> [EmployeeDepartmentHistory.BusinessEntityID, EmployeeDepartmentHistory.StartDate]
+>> [EmployeeDepartmentHistory.BusinessEntityID, EmployeeDepartmentHistory.DepartmentID]
+>> [EmployeeDepartmentHistory.BusinessEntityID, EmployeeDepartmentHistory.EndDate]
+Tab:: EmployeePayHistory
+>> [EmployeePayHistory.BusinessEntityID, EmployeePayHistory.RateChangeDate]
+>> [EmployeePayHistory.BusinessEntityID, EmployeePayHistory.Rate]
+>> [EmployeePayHistory.BusinessEntityID, EmployeePayHistory.ModifiedDate]
+Tab:: Illustration
+>> [Illustration.IllustrationID]
+>> [Illustration.Diagram]
+>> [Illustration.ModifiedDate]
+Tab:: JobCandidate
+>> [JobCandidate.JobCandidateID]
+>> [JobCandidate.Resume]
+Tab:: Location
+>> [Location.LocationID]
+>> [Location.Name]
+Tab:: Password
+>> [Password.BusinessEntityID]
+>> [Password.PasswordHash]
+>> [Password.PasswordSalt]
+>> [Password.rowguid]
+Tab:: Person
+>> [Person.BusinessEntityID]
+>> [Person.rowguid]
+>> [Person.FirstName, Person.LastName, Person.ModifiedDate, Person.PersonType]
+Tab:: PersonCreditCard
+>> [PersonCreditCard.BusinessEntityID]
+>> [PersonCreditCard.CreditCardID]
+Tab:: PersonPhone
+>> [PersonPhone.BusinessEntityID]
+Tab:: PhoneNumberType
+>> [PhoneNumberType.PhoneNumberTypeID]
+>> [PhoneNumberType.Name]
+Tab:: Product
+>> [Product.ProductID]
+>> [Product.Name]
+>> [Product.ProductNumber]
+>> [Product.rowguid]
+Tab:: ProductCategory
+>> [ProductCategory.ProductCategoryID]
+>> [ProductCategory.Name]
+>> [ProductCategory.rowguid]
+Tab:: ProductCostHistory
+>> [ProductCostHistory.ProductID, ProductCostHistory.StandardCost]
+>> [ProductCostHistory.ProductID, ProductCostHistory.StartDate]
+>> [ProductCostHistory.EndDate, ProductCostHistory.ProductID]
+>> [ProductCostHistory.ModifiedDate, ProductCostHistory.ProductID]
+Tab:: ProductDescription
+>> [ProductDescription.ProductDescriptionID]
+>> [ProductDescription.rowguid]
+Tab:: ProductDocument
+>> [ProductDocument.DocumentNode, ProductDocument.ProductID]
+Tab:: ProductInventory
+>> [ProductInventory.rowguid]
+>> [ProductInventory.ProductID, ProductInventory.Quantity]
+>> [ProductInventory.LocationID, ProductInventory.ProductID]
+Tab:: ProductListPriceHistory
+>> [ProductListPriceHistory.ProductID, ProductListPriceHistory.StartDate]
+>> [ProductListPriceHistory.EndDate, ProductListPriceHistory.ProductID]
+>> [ProductListPriceHistory.ModifiedDate, ProductListPriceHistory.ProductID]
+Tab:: ProductModel
+>> [ProductModel.ProductModelID]
+>> [ProductModel.Name]
+>> [ProductModel.rowguid]
+Tab:: ProductModelIllustration
+>> [ProductModelIllustration.IllustrationID, ProductModelIllustration.ProductModelID]
+Tab:: ProductModelProductDescriptionCulture
+>> [ProductModelProductDescriptionCulture.ProductDescriptionID]
+>> [ProductModelProductDescriptionCulture.CultureID, ProductModelProductDescriptionCulture.ProductModelID]
+Tab:: ProductPhoto
+>> [ProductPhoto.ProductPhotoID]
+>> [ProductPhoto.ThumbNailPhoto]
+>> [ProductPhoto.ThumbnailPhotoFileName]
+>> [ProductPhoto.LargePhoto]
+>> [ProductPhoto.LargePhotoFileName]
+Tab:: ProductProductPhoto
+>> [ProductProductPhoto.ProductID]
+Tab:: ProductReview
+>> [ProductReview.ProductReviewID]
+>> [ProductReview.ReviewerName]
+>> [ProductReview.EmailAddress]
+>> [ProductReview.Comments]
+>> [ProductReview.ProductID, ProductReview.ReviewDate]
+>> [ProductReview.ProductID, ProductReview.Rating]
+>> [ProductReview.ModifiedDate, ProductReview.ProductID]
+>> [ProductReview.Rating, ProductReview.ReviewDate]
+>> [ProductReview.ModifiedDate, ProductReview.Rating]
+Tab:: ProductSubcategory
+>> [ProductSubcategory.ProductSubcategoryID]
+>> [ProductSubcategory.Name]
+>> [ProductSubcategory.rowguid]
+Tab:: ProductVendor
+>> [ProductVendor.LastReceiptDate, ProductVendor.ProductID, ProductVendor.StandardPrice]
+>> [ProductVendor.ModifiedDate, ProductVendor.ProductID, ProductVendor.StandardPrice]
+>> [ProductVendor.LastReceiptCost, ProductVendor.LastReceiptDate, ProductVendor.ProductID]
+>> [ProductVendor.LastReceiptCost, ProductVendor.ModifiedDate, ProductVendor.ProductID]
+>> [ProductVendor.BusinessEntityID, ProductVendor.ProductID]
+Tab:: PurchaseOrderDetail
+>> [PurchaseOrderDetail.PurchaseOrderDetailID]
+Tab:: PurchaseOrderHeader
+>> [PurchaseOrderHeader.PurchaseOrderID]
+Tab:: SalesOrderDetail
+>> [SalesOrderDetail.SalesOrderDetailID]
+>> [SalesOrderDetail.rowguid]
+>> [SalesOrderDetail.ProductID, SalesOrderDetail.SalesOrderID]
+Tab:: SalesOrderHeader
+>> [SalesOrderHeader.SalesOrderID]
+>> [SalesOrderHeader.SalesOrderNumber]
+>> [SalesOrderHeader.rowguid]
+>> [SalesOrderHeader.AccountNumber, SalesOrderHeader.OrderDate, SalesOrderHeader.TotalDue]
+>> [SalesOrderHeader.AccountNumber, SalesOrderHeader.DueDate, SalesOrderHeader.TotalDue]
+>> [SalesOrderHeader.AccountNumber, SalesOrderHeader.ShipDate, SalesOrderHeader.TotalDue]
+>> [SalesOrderHeader.AccountNumber, SalesOrderHeader.ModifiedDate, SalesOrderHeader.TotalDue]
+>> [SalesOrderHeader.AccountNumber, SalesOrderHeader.OrderDate, SalesOrderHeader.SubTotal]
+>> [SalesOrderHeader.AccountNumber, SalesOrderHeader.DueDate, SalesOrderHeader.SubTotal]
+>> [SalesOrderHeader.AccountNumber, SalesOrderHeader.ShipDate, SalesOrderHeader.SubTotal]
+>> [SalesOrderHeader.AccountNumber, SalesOrderHeader.ModifiedDate, SalesOrderHeader.SubTotal]
+>> [SalesOrderHeader.AccountNumber, SalesOrderHeader.OrderDate, SalesOrderHeader.TaxAmt]
+>> [SalesOrderHeader.AccountNumber, SalesOrderHeader.DueDate, SalesOrderHeader.TaxAmt]
+>> [SalesOrderHeader.AccountNumber, SalesOrderHeader.ShipDate, SalesOrderHeader.TaxAmt]
+>> [SalesOrderHeader.AccountNumber, SalesOrderHeader.ModifiedDate, SalesOrderHeader.TaxAmt]
+>> [SalesOrderHeader.AccountNumber, SalesOrderHeader.Freight, SalesOrderHeader.OrderDate]
+>> [SalesOrderHeader.AccountNumber, SalesOrderHeader.DueDate, SalesOrderHeader.Freight]
+>> [SalesOrderHeader.AccountNumber, SalesOrderHeader.Freight, SalesOrderHeader.ShipDate]
+>> [SalesOrderHeader.AccountNumber, SalesOrderHeader.Freight, SalesOrderHeader.ModifiedDate]
+>> [SalesOrderHeader.CustomerID, SalesOrderHeader.OrderDate, SalesOrderHeader.TotalDue]
+>> [SalesOrderHeader.CustomerID, SalesOrderHeader.DueDate, SalesOrderHeader.TotalDue]
+>> [SalesOrderHeader.CustomerID, SalesOrderHeader.ShipDate, SalesOrderHeader.TotalDue]
+>> [SalesOrderHeader.CustomerID, SalesOrderHeader.ModifiedDate, SalesOrderHeader.TotalDue]
+>> [SalesOrderHeader.CustomerID, SalesOrderHeader.OrderDate, SalesOrderHeader.SubTotal]
+>> [SalesOrderHeader.CustomerID, SalesOrderHeader.DueDate, SalesOrderHeader.SubTotal]
+>> [SalesOrderHeader.CustomerID, SalesOrderHeader.ShipDate, SalesOrderHeader.SubTotal]
+>> [SalesOrderHeader.CustomerID, SalesOrderHeader.ModifiedDate, SalesOrderHeader.SubTotal]
+>> [SalesOrderHeader.CustomerID, SalesOrderHeader.OrderDate, SalesOrderHeader.TaxAmt]
+>> [SalesOrderHeader.CustomerID, SalesOrderHeader.DueDate, SalesOrderHeader.TaxAmt]
+>> [SalesOrderHeader.CustomerID, SalesOrderHeader.ShipDate, SalesOrderHeader.TaxAmt]
+>> [SalesOrderHeader.CustomerID, SalesOrderHeader.ModifiedDate, SalesOrderHeader.TaxAmt]
+>> [SalesOrderHeader.CustomerID, SalesOrderHeader.Freight, SalesOrderHeader.OrderDate]
+>> [SalesOrderHeader.CustomerID, SalesOrderHeader.DueDate, SalesOrderHeader.Freight]
+>> [SalesOrderHeader.CustomerID, SalesOrderHeader.Freight, SalesOrderHeader.ShipDate]
+>> [SalesOrderHeader.CustomerID, SalesOrderHeader.Freight, SalesOrderHeader.ModifiedDate]
+>> [SalesOrderHeader.BillToAddressID, SalesOrderHeader.OrderDate, SalesOrderHeader.TotalDue]
+>> [SalesOrderHeader.BillToAddressID, SalesOrderHeader.DueDate, SalesOrderHeader.TotalDue]
+>> [SalesOrderHeader.BillToAddressID, SalesOrderHeader.ShipDate, SalesOrderHeader.TotalDue]
+>> [SalesOrderHeader.BillToAddressID, SalesOrderHeader.ModifiedDate, SalesOrderHeader.TotalDue]
+>> [SalesOrderHeader.BillToAddressID, SalesOrderHeader.OrderDate, SalesOrderHeader.SubTotal]
+>> [SalesOrderHeader.BillToAddressID, SalesOrderHeader.DueDate, SalesOrderHeader.SubTotal]
+>> [SalesOrderHeader.BillToAddressID, SalesOrderHeader.ShipDate, SalesOrderHeader.SubTotal]
+>> [SalesOrderHeader.BillToAddressID, SalesOrderHeader.ModifiedDate, SalesOrderHeader.SubTotal]
+>> [SalesOrderHeader.BillToAddressID, SalesOrderHeader.OrderDate, SalesOrderHeader.TaxAmt]
+>> [SalesOrderHeader.BillToAddressID, SalesOrderHeader.DueDate, SalesOrderHeader.TaxAmt]
+>> [SalesOrderHeader.BillToAddressID, SalesOrderHeader.ShipDate, SalesOrderHeader.TaxAmt]
+>> [SalesOrderHeader.BillToAddressID, SalesOrderHeader.ModifiedDate, SalesOrderHeader.TaxAmt]
+>> [SalesOrderHeader.BillToAddressID, SalesOrderHeader.Freight, SalesOrderHeader.OrderDate]
+>> [SalesOrderHeader.BillToAddressID, SalesOrderHeader.DueDate, SalesOrderHeader.Freight]
+>> [SalesOrderHeader.BillToAddressID, SalesOrderHeader.Freight, SalesOrderHeader.ShipDate]
+>> [SalesOrderHeader.BillToAddressID, SalesOrderHeader.Freight, SalesOrderHeader.ModifiedDate]
+>> [SalesOrderHeader.OrderDate, SalesOrderHeader.ShipToAddressID, SalesOrderHeader.TotalDue]
+>> [SalesOrderHeader.DueDate, SalesOrderHeader.ShipToAddressID, SalesOrderHeader.TotalDue]
+>> [SalesOrderHeader.ShipDate, SalesOrderHeader.ShipToAddressID, SalesOrderHeader.TotalDue]
+>> [SalesOrderHeader.ModifiedDate, SalesOrderHeader.ShipToAddressID, SalesOrderHeader.TotalDue]
+>> [SalesOrderHeader.OrderDate, SalesOrderHeader.ShipToAddressID, SalesOrderHeader.SubTotal]
+>> [SalesOrderHeader.DueDate, SalesOrderHeader.ShipToAddressID, SalesOrderHeader.SubTotal]
+>> [SalesOrderHeader.ShipDate, SalesOrderHeader.ShipToAddressID, SalesOrderHeader.SubTotal]
+>> [SalesOrderHeader.ModifiedDate, SalesOrderHeader.ShipToAddressID, SalesOrderHeader.SubTotal]
+>> [SalesOrderHeader.OrderDate, SalesOrderHeader.ShipToAddressID, SalesOrderHeader.TaxAmt]
+>> [SalesOrderHeader.DueDate, SalesOrderHeader.ShipToAddressID, SalesOrderHeader.TaxAmt]
+>> [SalesOrderHeader.ShipDate, SalesOrderHeader.ShipToAddressID, SalesOrderHeader.TaxAmt]
+>> [SalesOrderHeader.ModifiedDate, SalesOrderHeader.ShipToAddressID, SalesOrderHeader.TaxAmt]
+>> [SalesOrderHeader.Freight, SalesOrderHeader.OrderDate, SalesOrderHeader.ShipToAddressID]
+>> [SalesOrderHeader.DueDate, SalesOrderHeader.Freight, SalesOrderHeader.ShipToAddressID]
+>> [SalesOrderHeader.Freight, SalesOrderHeader.ShipDate, SalesOrderHeader.ShipToAddressID]
+>> [SalesOrderHeader.Freight, SalesOrderHeader.ModifiedDate, SalesOrderHeader.ShipToAddressID]
+Tab:: SalesOrderHeaderSalesReason
+>> [SalesOrderHeaderSalesReason.SalesOrderID, SalesOrderHeaderSalesReason.SalesReasonID]
+Tab:: SalesPerson
+>> [SalesPerson.BusinessEntityID]
+>> [SalesPerson.SalesYTD]
+>> [SalesPerson.rowguid]
+>> [SalesPerson.Bonus, SalesPerson.ModifiedDate, SalesPerson.TerritoryID]
+>> [SalesPerson.Bonus, SalesPerson.CommissionPct, SalesPerson.ModifiedDate]
+>> [SalesPerson.ModifiedDate, SalesPerson.SalesLastYear]
+>> [SalesPerson.CommissionPct, SalesPerson.ModifiedDate, SalesPerson.TerritoryID]
+Tab:: SalesPersonQuotaHistory
+>> [SalesPersonQuotaHistory.rowguid]
+>> [SalesPersonQuotaHistory.BusinessEntityID, SalesPersonQuotaHistory.QuotaDate]
+>> [SalesPersonQuotaHistory.BusinessEntityID, SalesPersonQuotaHistory.ModifiedDate]
+Tab:: SalesReason
+>> [SalesReason.SalesReasonID]
+>> [SalesReason.Name]
+Tab:: SalesTaxRate
+>> [SalesTaxRate.SalesTaxRateID]
+>> [SalesTaxRate.rowguid]
+>> [SalesTaxRate.Name, SalesTaxRate.StateProvinceID]
+>> [SalesTaxRate.StateProvinceID, SalesTaxRate.TaxRate]
+>> [SalesTaxRate.StateProvinceID, SalesTaxRate.TaxType]
+Tab:: SalesTerritory
+>> [SalesTerritory.TerritoryID]
+>> [SalesTerritory.Name]
+>> [SalesTerritory.SalesYTD]
+>> [SalesTerritory.SalesLastYear]
+>> [SalesTerritory.rowguid]
+Tab:: SalesTerritoryHistory
+>> [SalesTerritoryHistory.rowguid]
+>> [SalesTerritoryHistory.BusinessEntityID, SalesTerritoryHistory.TerritoryID]
+>> [SalesTerritoryHistory.BusinessEntityID, SalesTerritoryHistory.ModifiedDate]
+>> [SalesTerritoryHistory.BusinessEntityID, SalesTerritoryHistory.StartDate]
+>> [SalesTerritoryHistory.BusinessEntityID, SalesTerritoryHistory.EndDate]
+Tab:: ScrapReason
+>> [ScrapReason.ScrapReasonID]
+>> [ScrapReason.Name]
+Tab:: Shift
+>> [Shift.ShiftID]
+>> [Shift.Name]
+>> [Shift.StartTime]
+>> [Shift.EndTime]
+Tab:: ShipMethod
+>> [ShipMethod.ShipMethodID]
+>> [ShipMethod.Name]
+>> [ShipMethod.ShipBase]
+>> [ShipMethod.ShipRate]
+>> [ShipMethod.rowguid]
+Tab:: ShoppingCartItem
+>> [ShoppingCartItem.ShoppingCartItemID]
+>> [ShoppingCartItem.Quantity]
+>> [ShoppingCartItem.ProductID]
+Tab:: SpecialOffer
+>> [SpecialOffer.SpecialOfferID]
+>> [SpecialOffer.Description]
+>> [SpecialOffer.rowguid]
+>> [SpecialOffer.DiscountPct, SpecialOffer.EndDate]
+>> [SpecialOffer.DiscountPct, SpecialOffer.Type]
+Tab:: SpecialOfferProduct
+>> [SpecialOfferProduct.rowguid]
+>> [SpecialOfferProduct.ProductID, SpecialOfferProduct.SpecialOfferID]
+Tab:: StateProvince
+>> [StateProvince.StateProvinceID]
+>> [StateProvince.StateProvinceCode]
+>> [StateProvince.Name]
+>> [StateProvince.rowguid]
+Tab:: Store
+>> [Store.BusinessEntityID]
+>> [Store.Demographics]
+>> [Store.rowguid]
+>> [Store.Name, Store.SalesPersonID]
+Tab:: TransactionHistory
+>> [TransactionHistory.TransactionID]
+>> [TransactionHistory.ProductID, TransactionHistory.ReferenceOrderID, TransactionHistory.TransactionDate]
+>> [TransactionHistory.ModifiedDate, TransactionHistory.ProductID, TransactionHistory.ReferenceOrderID]
+>> [TransactionHistory.ActualCost, TransactionHistory.ProductID, TransactionHistory.ReferenceOrderID]
+>> [TransactionHistory.ProductID, TransactionHistory.ReferenceOrderID, TransactionHistory.TransactionType]
+>> [TransactionHistory.ReferenceOrderID, TransactionHistory.ReferenceOrderLineID]
+Tab:: TransactionHistoryArchive
+>> [TransactionHistoryArchive.TransactionID]
+>> [TransactionHistoryArchive.ProductID, TransactionHistoryArchive.ReferenceOrderID]
+>> [TransactionHistoryArchive.ReferenceOrderID, TransactionHistoryArchive.ReferenceOrderLineID]
+Tab:: UnitMeasure
+>> [UnitMeasure.UnitMeasureCode]
+>> [UnitMeasure.Name]
+Tab:: Vendor
+>> [Vendor.BusinessEntityID]
+>> [Vendor.AccountNumber]
+>> [Vendor.Name]
+Tab:: WorkOrder
+>> [WorkOrder.WorkOrderID]
+Tab:: WorkOrderRouting
+>> [WorkOrderRouting.OperationSequence, WorkOrderRouting.WorkOrderID]
+>> [WorkOrderRouting.LocationID, WorkOrderRouting.WorkOrderID]
+>> [WorkOrderRouting.PlannedCost, WorkOrderRouting.WorkOrderID]
+>> [WorkOrderRouting.ActualCost, WorkOrderRouting.WorkOrderID]
+>> [WorkOrderRouting.ActualResourceHrs, WorkOrderRouting.WorkOrderID]
+StopTime:: 1593601134206
+TimeTaken:: 3s

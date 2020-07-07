@@ -1,0 +1,269 @@
+
+
+StartTime:: 1593600964185
+Tab:: action_type
+>> [action_type.action_type]
+>> [action_type.description]
+Tab:: activities
+>> [activities.activity_id]
+Tab:: activity_properties
+>> [activity_properties.ap_id]
+>> [activity_properties.activity_id, activity_properties.type]
+>> [activity_properties.activity_id, activity_properties.standard_type]
+Tab:: activity_smid
+>> [activity_smid.smid]
+Tab:: activity_stds_lookup
+>> [activity_stds_lookup.std_act_id]
+>> [activity_stds_lookup.definition, activity_stds_lookup.standard_units]
+>> [activity_stds_lookup.standard_type, activity_stds_lookup.standard_units]
+Tab:: activity_supp
+>> [activity_supp.as_id]
+>> [activity_supp.smid]
+>> [activity_supp.comments, activity_supp.type]
+>> [activity_supp.rgid, activity_supp.type]
+Tab:: activity_supp_map
+>> [activity_supp_map.actsm_id]
+>> [activity_supp_map.smid]
+Tab:: assays
+>> [assays.assay_id]
+>> [assays.chembl_id]
+Tab:: assay_classification
+>> [assay_classification.assay_class_id]
+>> [assay_classification.l3]
+Tab:: assay_class_map
+>> [assay_class_map.ass_cls_map_id]
+>> [assay_class_map.assay_class_id, assay_class_map.assay_id]
+Tab:: assay_parameters
+>> [assay_parameters.assay_param_id]
+>> [assay_parameters.assay_id, assay_parameters.type]
+>> [assay_parameters.assay_id, assay_parameters.standard_type]
+Tab:: assay_type
+>> [assay_type.assay_type]
+>> [assay_type.assay_desc]
+Tab:: atc_classification
+>> [atc_classification.level5]
+>> [atc_classification.level4, atc_classification.who_name]
+>> [atc_classification.level3, atc_classification.level4_description, atc_classification.who_name]
+>> [atc_classification.level2, atc_classification.level3_description, atc_classification.level4_description, atc_classification.who_name]
+>> [atc_classification.level2_description, atc_classification.level3_description, atc_classification.level4_description, atc_classification.who_name]
+Tab:: binding_sites
+>> [binding_sites.site_id]
+Tab:: bioassay_ontology
+>> [bioassay_ontology.bao_id]
+>> [bioassay_ontology.label]
+Tab:: biotherapeutics
+>> [biotherapeutics.molregno]
+Tab:: biotherapeutic_components
+>> [biotherapeutic_components.biocomp_id]
+>> [biotherapeutic_components.component_id, biotherapeutic_components.molregno]
+Tab:: bio_component_sequences
+>> [bio_component_sequences.component_id]
+>> [bio_component_sequences.description, bio_component_sequences.sequence_md5sum]
+>> [bio_component_sequences.description, bio_component_sequences.sequence]
+Tab:: cell_dictionary
+>> [cell_dictionary.cell_id]
+>> [cell_dictionary.chembl_id]
+>> [cell_dictionary.cell_description, cell_dictionary.cell_source_organism, cell_dictionary.cellosaurus_id]
+>> [cell_dictionary.cell_description, cell_dictionary.cell_source_tax_id, cell_dictionary.cellosaurus_id]
+>> [cell_dictionary.cell_name, cell_dictionary.cell_source_organism]
+>> [cell_dictionary.cell_name, cell_dictionary.cell_source_tax_id]
+Tab:: chembl_id_lookup
+>> [chembl_id_lookup.chembl_id]
+>> [chembl_id_lookup.entity_id, chembl_id_lookup.entity_type]
+Tab:: component_class
+>> [component_class.comp_class_id]
+>> [component_class.component_id, component_class.protein_class_id]
+Tab:: component_domains
+>> [component_domains.compd_id]
+>> [component_domains.component_id, component_domains.end_position]
+>> [component_domains.component_id, component_domains.start_position]
+Tab:: component_go
+>> [component_go.comp_go_id]
+>> [component_go.component_id, component_go.go_id]
+Tab:: component_sequences
+>> [component_sequences.component_id]
+>> [component_sequences.accession, component_sequences.description, component_sequences.organism]
+>> [component_sequences.accession, component_sequences.description, component_sequences.tax_id]
+Tab:: component_synonyms
+>> [component_synonyms.compsyn_id]
+>> [component_synonyms.component_id, component_synonyms.component_synonym, component_synonyms.syn_type]
+Tab:: compound_properties
+>> [compound_properties.molregno]
+Tab:: compound_records
+>> [compound_records.record_id]
+Tab:: compound_structural_alerts
+>> [compound_structural_alerts.cpd_str_alert_id]
+>> [compound_structural_alerts.alert_id, compound_structural_alerts.molregno]
+Tab:: compound_structures
+>> [compound_structures.molregno]
+>> [compound_structures.molfile]
+>> [compound_structures.standard_inchi_key]
+>> [compound_structures.canonical_smiles, compound_structures.standard_inchi]
+Tab:: confidence_score_lookup
+>> [confidence_score_lookup.confidence_score]
+>> [confidence_score_lookup.description]
+>> [confidence_score_lookup.target_mapping]
+Tab:: curation_lookup
+>> [curation_lookup.curated_by]
+>> [curation_lookup.description]
+Tab:: data_validity_lookup
+>> [data_validity_lookup.data_validity_comment]
+>> [data_validity_lookup.description]
+Tab:: defined_daily_dose
+>> [defined_daily_dose.ddd_id]
+>> [defined_daily_dose.atc_code, defined_daily_dose.ddd_admr, defined_daily_dose.ddd_comment]
+Tab:: docs
+>> [docs.doc_id]
+>> [docs.chembl_id]
+>> [docs.first_page, docs.patent_id, docs.ridx, docs.src_id, docs.title]
+>> [docs.last_page, docs.patent_id, docs.ridx, docs.src_id, docs.title]
+Tab:: domains
+>> [domains.domain_id]
+>> [domains.source_domain_id]
+>> [domains.domain_name]
+Tab:: drug_indication
+>> [drug_indication.drugind_id]
+>> [drug_indication.efo_id, drug_indication.mesh_id, drug_indication.record_id]
+>> [drug_indication.efo_term, drug_indication.mesh_id, drug_indication.record_id]
+>> [drug_indication.efo_id, drug_indication.mesh_heading, drug_indication.record_id]
+>> [drug_indication.efo_term, drug_indication.mesh_heading, drug_indication.record_id]
+Tab:: drug_mechanism
+>> [drug_mechanism.mec_id]
+Tab:: formulations
+>> [formulations.formulation_id]
+>> [formulations.ingredient, formulations.product_id]
+>> [formulations.product_id, formulations.record_id]
+>> [formulations.molregno, formulations.product_id]
+Tab:: frac_classification
+>> [frac_classification.frac_class_id]
+>> [frac_classification.active_ingredient]
+>> [frac_classification.level5]
+Tab:: go_classification
+>> [go_classification.go_id]
+>> [go_classification.pref_name]
+>> [go_classification.path]
+Tab:: hrac_classification
+>> [hrac_classification.hrac_class_id]
+>> [hrac_classification.level3]
+>> [hrac_classification.active_ingredient, hrac_classification.level2]
+>> [hrac_classification.active_ingredient, hrac_classification.level1]
+>> [hrac_classification.active_ingredient, hrac_classification.hrac_code]
+>> [hrac_classification.active_ingredient, hrac_classification.level1_description]
+Tab:: indication_refs
+>> [indication_refs.indref_id]
+>> [indication_refs.drugind_id, indication_refs.ref_id]
+>> [indication_refs.drugind_id, indication_refs.ref_url]
+Tab:: irac_classification
+>> [irac_classification.irac_class_id]
+>> [irac_classification.active_ingredient]
+>> [irac_classification.level4]
+Tab:: ligand_eff
+>> [ligand_eff.activity_id]
+Tab:: mechanism_refs
+>> [mechanism_refs.mecref_id]
+>> [mechanism_refs.mec_id, mechanism_refs.ref_id]
+>> [mechanism_refs.mec_id, mechanism_refs.ref_url]
+Tab:: metabolism
+>> [metabolism.met_id]
+Tab:: metabolism_refs
+>> [metabolism_refs.metref_id]
+>> [metabolism_refs.met_id, metabolism_refs.ref_id]
+>> [metabolism_refs.met_id, metabolism_refs.ref_url]
+Tab:: molecule_atc_classification
+>> [molecule_atc_classification.mol_atc_id]
+>> [molecule_atc_classification.level5, molecule_atc_classification.molregno]
+Tab:: molecule_dictionary
+>> [molecule_dictionary.molregno]
+>> [molecule_dictionary.chembl_id]
+Tab:: molecule_frac_classification
+>> [molecule_frac_classification.mol_frac_id]
+>> [molecule_frac_classification.molregno]
+Tab:: molecule_hierarchy
+>> [molecule_hierarchy.molregno]
+Tab:: molecule_hrac_classification
+>> [molecule_hrac_classification.mol_hrac_id]
+>> [molecule_hrac_classification.hrac_class_id, molecule_hrac_classification.molregno]
+Tab:: molecule_irac_classification
+>> [molecule_irac_classification.mol_irac_id]
+>> [molecule_irac_classification.molregno]
+Tab:: molecule_synonyms
+>> [molecule_synonyms.molsyn_id]
+>> [molecule_synonyms.molregno, molecule_synonyms.syn_type, molecule_synonyms.synonyms]
+Tab:: organism_class
+>> [organism_class.oc_id]
+>> [organism_class.tax_id]
+Tab:: patent_use_codes
+>> [patent_use_codes.patent_use_code]
+Tab:: predicted_binding_domains
+>> [predicted_binding_domains.predbind_id]
+>> [predicted_binding_domains.activity_id]
+Tab:: products
+>> [products.product_id]
+Tab:: product_patents
+>> [product_patents.prod_pat_id]
+>> [product_patents.patent_expire_date, product_patents.patent_no, product_patents.patent_use_code, product_patents.product_id]
+Tab:: protein_classification
+>> [protein_classification.protein_class_id]
+>> [protein_classification.protein_class_desc]
+>> [protein_classification.parent_id, protein_classification.pref_name]
+>> [protein_classification.class_level, protein_classification.pref_name]
+>> [protein_classification.parent_id, protein_classification.short_name]
+Tab:: protein_class_synonyms
+>> [protein_class_synonyms.protclasssyn_id]
+>> [protein_class_synonyms.protein_class_id, protein_class_synonyms.protein_class_synonym, protein_class_synonyms.syn_type]
+Tab:: protein_family_classification
+>> [protein_family_classification.protein_class_id]
+>> [protein_family_classification.protein_class_desc]
+Tab:: relationship_type
+>> [relationship_type.relationship_type]
+>> [relationship_type.relationship_desc]
+Tab:: research_companies
+>> [research_companies.co_stem_id]
+>> [research_companies.company, research_companies.res_stem_id]
+Tab:: research_stem
+>> [research_stem.res_stem_id]
+>> [research_stem.research_stem]
+Tab:: site_components
+>> [site_components.sitecomp_id]
+>> [site_components.component_id, site_components.site_id]
+Tab:: source
+>> [source.src_id]
+>> [source.src_description]
+>> [source.src_short_name]
+Tab:: structural_alerts
+>> [structural_alerts.alert_id]
+>> [structural_alerts.alert_name, structural_alerts.alert_set_id, structural_alerts.smarts]
+Tab:: structural_alert_sets
+>> [structural_alert_sets.alert_set_id]
+>> [structural_alert_sets.set_name]
+>> [structural_alert_sets.priority]
+Tab:: target_components
+>> [target_components.targcomp_id]
+>> [target_components.component_id, target_components.tid]
+Tab:: target_dictionary
+>> [target_dictionary.tid]
+>> [target_dictionary.chembl_id]
+Tab:: target_relations
+>> [target_relations.targrel_id]
+>> [target_relations.related_tid, target_relations.tid]
+Tab:: target_type
+>> [target_type.target_type]
+>> [target_type.target_desc]
+Tab:: tissue_dictionary
+>> [tissue_dictionary.tissue_id]
+>> [tissue_dictionary.pref_name]
+>> [tissue_dictionary.chembl_id]
+Tab:: usan_stems
+>> [usan_stems.usan_stem_id]
+>> [usan_stems.stem, usan_stems.subgroup]
+Tab:: variant_sequences
+>> [variant_sequences.variant_id]
+>> [variant_sequences.accession, variant_sequences.sequence]
+>> [variant_sequences.organism, variant_sequences.sequence]
+>> [variant_sequences.accession, variant_sequences.mutation]
+Tab:: version
+>> [version.name]
+>> [version.creation_date]
+>> [version.comments]
+StopTime:: 1593601130432
+TimeTaken:: 166s
